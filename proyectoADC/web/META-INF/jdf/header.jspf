@@ -1,0 +1,202 @@
+     <%@ page pageEncoding="UTF-8" %>
+<body class="">
+<!-- HEADER -->
+        <header id="header">
+            <div id="logo-group">
+
+                <!-- PLACE YOUR LOGO HERE -->
+                <span id="logo"> <img src="recursos/img/logo.png" alt="SmartAdmin"> </span>
+                <!-- END LOGO PLACEHOLDER -->
+
+                <!-- Note: The activity badge color changes when clicked and resets the number to 0
+                Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications 
+                <span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge">0</b> </span>-->
+            </div>
+            <!-- pulled right: nav area -->
+            <div class="pull-right">
+                <!-- collapse menu button -->
+                <div id="hide-menu" class="btn-header pull-right">
+                    <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+                </div>
+                <!-- end collapse menu -->
+
+                <!-- logout button -->
+                <div id="logout" class="btn-header transparent pull-right">
+                    <span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="Puedes mejorar aún más su seguridad después de cerrar la sesión cerrando este navegador"><i class="fa fa-power-off"></i></a></span>
+                </div>
+                <!-- end logout button -->
+
+                <!-- fullscreen button -->
+                <div id="fullscreen" class="btn-header transparent pull-right">
+                    <span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
+                </div>
+                <!-- end fullscreen button -->
+            </div>
+            <!-- end pulled right: nav area -->
+
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Left panel : Navigation area -->
+        <!-- Note: This width of the aside area can be adjusted through LESS variables -->
+        <aside id="left-panel">
+
+            <!-- User info -->
+            <div class="login-info">
+                <span> <!-- User image size is adjusted inside CSS, it should stay as it --> 
+
+                    <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+                        <img src="recursos/img/avatars/4.png" alt="me" class="online" /> 
+                        <span>
+                            john.jose 
+                        </span>
+
+                    </a> 
+
+                </span>
+            </div>
+            <!-- end user info -->
+
+            <!-- NAVIGATION : This navigation is also responsive-->
+            <nav>
+                <ul>
+                    <li >
+                        <a href="#" ><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Inicio</span></a>
+                        <ul>
+                            <li class="">
+                                <a href="index.html" ><span class="menu-item-parent">Analytics Dashboard</span></a>
+                            </li>
+                            <li class="">
+                                <a href="dashboard-social.html" ><span class="menu-item-parent">Social Wall</span></a>
+                            </li>
+                        </ul>	
+                    </li>
+                    <li class="top-menu-invisible">
+                        <a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">Registrar</span></a>
+                        <ul>
+                            <li class="">
+                                <a href="Rresponsable" ><i class="fa fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Responsable</span></a>
+                            </li>
+                            <li class="">
+                                <a href="Rdepar" title="Dashboard"><i class="fa fa-lg fa-fw fa-picture-o"></i> <span class="menu-item-parent">Departamento</span></a>
+                            </li>
+                            <li>
+                                <a href="Rmobiliario"><i class="fa fa-cube"></i> Mobiliario</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Mobiliario en Baja</span> <span class="badge pull-right inbox-badge margin-right-13">14</span></a>
+                        <ul>
+                            <li class="">
+                                <a href="Rresponsable" ><i class="fa fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Responsable</span></a>
+                            </li>
+                            <li class="">
+                                <a href="Rdepar" title="Dashboard"><i class="fa fa-lg fa-fw fa-picture-o"></i> <span class="menu-item-parent">Departamento</span></a>
+                            </li>
+                            <li>
+                                <a href="applayout.html"><i class="fa fa-cube"></i> App Settings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Ebaja"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Evaluar Baja</span></a>
+                     
+                    </li>
+                    <li>
+                        <a href="Rdepar"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Registrar Departamento</span></a>
+                      </li>
+                    <li>
+                        <a href="Cpass"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Cambiar Contraseña</span></a>
+                        
+                    </li>
+                    	
+                    <li>
+                        <a href="Cmobiliario"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span class="menu-item-parent">Consultar Mobiliario</span></a>
+                    </li>
+                    <li>
+                        <a href="Emobiliario"><i class="fa fa-lg fa-fw fa-cloud"><em>3</em></i> <span class="menu-item-parent">Estado Mobiliario</span></a>
+                     
+                    </li>	
+                    <li>
+                        <a href="#"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">App Views</span></a>
+                        <ul>
+                            <li>
+                                <a href="projects.html"><i class="fa fa-file-text-o"></i> Projects</a>
+                            </li>	
+                            <li>
+                                <a href="blog.html"><i class="fa fa-paragraph"></i> Blog</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html"><i class="fa fa-picture-o"></i> Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-comments"></i> Forum Layout</a>
+                                <ul>
+                                    <li><a href="forum.html">General View</a></li>
+                                    <li><a href="forum-topic.html">Topic View</a></li>
+                                    <li><a href="forum-post.html">Post View</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="profile.html"><i class="fa fa-group"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="timeline.html"><i class="fa fa-clock-o"></i> Timeline</a>
+                            </li>
+                            <li>
+                                <a href="search.html"><i class="fa fa-search"></i>  Search Page</a>
+                            </li>
+                        </ul>		
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">E-Commerce</span></a>
+                        <ul>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="products-view.html">Products View</a></li>
+                            <li><a href="products-detail.html">Products Detail</a></li>
+                        </ul>
+                    </li>	
+                    <li>
+                        <a href="#"><i class="fa fa-lg fa-fw fa-windows"></i> <span class="menu-item-parent">Miscellaneous</span></a>
+                        <ul>
+                            <li>
+                                <a href="../Landing_Page/" target="_blank">Landing Page <i class="fa fa-external-link"></i></a>
+                            </li>
+                            <li>
+                                <a href="pricing-table.html">Pricing Tables</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="login.html" target="_top">Login</a>
+                            </li>
+                            <li>
+                                <a href="register.html" target="_top">Register</a>
+                            </li>
+                            <li>
+                                <a href="forgotpassword.html" target="_top">Forgot Password</a>
+                            </li>
+                            <li>
+                                <a href="lock.html" target="_top">Locked Screen</a>
+                            </li>
+                            <li>
+                                <a href="error404.html">Error 404</a>
+                            </li>
+                            <li>
+                                <a href="error500.html">Error 500</a>
+                            </li>
+                            <li>
+                                <a href="blank_.html">Blank Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--<span class="minifyme" data-action="minifyMenu"> 
+                    <i class="fa fa-arrow-circle-left hit"></i> 
+            </span>-->
+
+        </aside>
+        <!-- END NAVIGATION -->

@@ -12,7 +12,7 @@
         <meta name="author" content="">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <%@include file="../../META-INF/jdf/header_estyle.jspf" %>
+        <%@include file="../../META-INF/jdf/head.jspf" %>
         <title>Institución Educativa El Buen Pastor</title>
     </head>
     <body class="animated fadeInDown">
@@ -75,7 +75,7 @@
                             <form action="index.html" id="login-form" class="smart-form client-form">
                                 <header>
                                     <center>
-                                    Sistema de Inventario
+                                    Sistema de Inventario 
                                     </center>
                                 </header>
 

@@ -26,4 +26,28 @@ public class HomeController {
     public String index(){  
         return "index";
     }
+    @RequestMapping("/Rresponsable")
+    public String Rresponsable(){  
+        return "Rresponsable";
+    }
+    @RequestMapping("/Ebaja")
+    public String Ebaja(){  
+        return "Ebaja";
+    }
+    @RequestMapping("/Rdepar")
+    public String Rdepar(){  
+        return "Rdepar";
+    }
+    @RequestMapping("/Cpass")
+    public String Cpass(){  
+        return "Cpass";
+    }
+    @RequestMapping("/Rmobiliario")
+    public String Rmobiliario(){  
+        return "Rmobiliario";
+    }
+    @RequestMapping("/Cmobiliario")
+    public String Cmobiliario(){  
+        return "Cmobiliario";
+    }
 }
