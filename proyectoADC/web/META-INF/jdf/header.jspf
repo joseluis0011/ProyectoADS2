@@ -50,7 +50,7 @@
                         <span>
                             john.jose 
                         </span>
-
+                        <i class="fa fa-angle-down"></i>
                     </a> 
 
                 </span>
@@ -83,6 +83,9 @@
                             <li>
                                 <a href="Rmobiliario"><i class="fa fa-cube"></i> Mobiliario</a>
                             </li>
+                            <li>
+                                <a href="Rcate"><i class="fa fa-cube"></i> Categoria</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -106,10 +109,6 @@
                     <li>
                         <a href="Rdepar"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Registrar Departamento</span></a>
                       </li>
-                    <li>
-                        <a href="Cpass"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Cambiar Contraseña</span></a>
-                        
-                    </li>
                     	
                     <li>
                         <a href="Cmobiliario"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span class="menu-item-parent">Consultar Mobiliario</span></a>

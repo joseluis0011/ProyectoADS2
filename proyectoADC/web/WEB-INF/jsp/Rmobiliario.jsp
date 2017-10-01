@@ -20,7 +20,7 @@
         <%@include file="../../META-INF/jdf/header.jspf" %>
         <!--end header-->
 
-        <!-- MAIN PANEL -->
+       <!-- MAIN PANEL -->
         <div id="main" role="main">
 
             <!-- RIBBON -->
@@ -45,16 +45,16 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Registrar Mobiliario <span>> My Dashboard</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i>  My Dashboard <span>>Registrar Mobiliario  </span></h1>
                     </div>
                 </div>
                 <!-- widget grid -->
-                <article class="col-sm-12 col-md-12 col-lg-10" style="padding: 1em 3em;margin: 1em 10%">
+                <article class="col-sm-12 col-md-12 col-lg-10" style="padding: 1em 1em;margin: 1em 10%">
                     <section id="widget-grid" class="">
                         <div class="jarviswidget" id="wid-id-4" data-widget-editbutton="false" data-widget-custombutton="false">
                             <header>
                                 <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                                <h2>Registrar Mobiliario </h2>				
+                                <h2>Registrar </h2>				
 
                             </header>
 
@@ -66,10 +66,17 @@
                                     <!-- This area used as dropdown edit box -->
 
                                 </div>
-                                <div class="widget-body no-padding">
-                                    <form id="smart-form-register" class="smart-form">
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    Agregar
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                 <form id="smart-form-register" class="smart-form">
                                         <header>
-                                            Registrar Mobiliario
+                                            Registrar Nuevo Mobiliario
                                         </header>
 
                                         <fieldset>
@@ -127,36 +134,29 @@
                                             </section>
                                             
                                         </fieldset>
-                                        <footer>
-                                            <footer>
-                                                <input type="hidden" name="opc"   value="REGISTRAR CONTRATO">
-                                                <button id="submitbtn" type="button" class="btn btn-labeled btn-success">
-                                                    Registrar
-                                                </button>
-                                                <button type="button" id="cancelbtn" class="btn btn-labeled btn-danger">
-                                                    Cancelar
-                                                </button>
-                                            </footer>
-                                        </footer>
                                     </form>
 
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Cancel
+                                                </button>
+                                                <button type="button" class="btn btn-primary">
+                                                    Guardar
+                                                </button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+                                <br>
+                                <br>
+                                <br>
+                                <div class="widget-body no-padding">
                                     <div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false">
-                                        <!-- widget options:
-                                        usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-                
-                                        data-widget-colorbutton="false"
-                                        data-widget-editbutton="false"
-                                        data-widget-togglebutton="false"
-                                        data-widget-deletebutton="false"
-                                        data-widget-fullscreenbutton="false"
-                                        data-widget-custombutton="false"
-                                        data-widget-collapsed="true"
-                                        data-widget-sortable="false"
-                
-                                        -->
+                                    
                                         <header>
                                             <span class="widget-icon"> <i class="fa fa-table"></i> </span>
-                                            <h2>Lista de Mobiliarios </h2>
+                                            <h2>Lista de Departamentos </h2>
 
                                         </header>
 
@@ -174,52 +174,64 @@
                                             <div class="widget-body no-padding">
 
                                                 <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
-                                                    <thead>			                
-                                                        <tr>
-                                                            <th data-hide="phone">ID</th>
-                                                            <th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Nombre</th>
-                                                            <th data-hide="phone"><i class="fa fa-fw fa-phone text-muted hidden-md hidden-sm hidden-xs"></i> Marca Mobiliario</th>
-                                                            <th>Numero de Serie de Mobiliario</th>
-                                                            <th data-hide="phone,tablet"><i class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i> Categoria</th>
-                                                            <th data-hide="phone,tablet">Estado</th>
-                                                            <th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Fecha Registro</th>
-                                                            <th data-hide="phone,tablet">Comentario</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Jennifer</td>
-                                                            <td>1-342-463-8341</td>
-                                                            <td>Et Rutrum Non Associates</td>
-                                                            <td>35728</td>
-                                                            <td>Fogo</td>
-                                                            <td>03/04/14</td>
-                                                            <td>Hola</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Clark</td>
-                                                            <td>1-516-859-1120</td>
-                                                            <td>Nam Ac Inc.</td>
-                                                            <td>7162</td>
-                                                            <td>Machelen</td>
-                                                            <td>03/23/13</td>
-                                                            <td>Hola</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>Brendan</td>
-                                                            <td>1-724-406-2487</td>
-                                                            <td>Enim Commodo Limited</td>
-                                                            <td>98611</td>
-                                                            <td>Norman</td>
-                                                            <td>02/13/14</td>
-                                                            <td>Hola</td>
-                                                        </tr>
+                                                                                <thead>			                
+                                                                                    <tr>
+                                                                                        <th data-hide="phone">ID</th>
+                                                                                        <th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Nombre del Mobiliario</th>
+                                                                                        <th data-hide="phone">Marca del Mobiliario</th>
+                                                                                        <th data-hide="phone">Numero de Serie del Mobiliario</th>
+                                                                                        <th data-hide="phone">Cantidad</th>
+                                                                                        <th data-hide="phone">Categoria</th>
+                                                                                        <th data-hide="phone">Estado</th>
+                                                                                        <th data-hide="phone">Fecha Registro</th>
+                                                                                        <th data-hide="phone">Comentario</th>
+                                                                                        <th data-hide="phone">Editar</th>
+                                                                                        <th data-hide="phone">Borrar</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>1</td>
+                                                                                        <td>Laptop</td>
+                                                                                        <td>toshiba</td>
+                                                                                        <td>55214628</td>
+                                                                                        <td>5</td>
+                                                                                        <td>Maquinas y Equipos Diversos</td>
+                                                                                        <td>bueno</td>
+                                                                                        <td>30/05/2007</td>
+                                                                                        <td>Se recibio en buen estado</td>
+                                                                                        <td><button type="button" class="btn btn-success">Editar</button></td>
+                                                                                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>2</td>
+                                                                                        <td>Escritorios</td>
+                                                                                        <td>mova</td>
+                                                                                        <td>2630045/td>
+                                                                                        <td>5</td>
+                                                                                        <td>Muebles y enseres</td>
+                                                                                        <td>bueno</td>
+                                                                                        <td>30/05/2010</td>
+                                                                                        <td>Se recibio en buen estado</td>
+                                                                                        <td><button type="button" class="btn btn-success">Editar</button></td>
+                                                                                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>3</td>
+                                                                                        <td>TV</td>
+                                                                                        <td>noc</td>
+                                                                                        <td>362508/td>
+                                                                                        <td>5</td>
+                                                                                        <td>	Equipos de Informatica</td>
+                                                                                        <td>bueno</td>
+                                                                                        <td>30/05/2016</td>
+                                                                                        <td>Se recibio en buen estado</td>
+                                                                                        <td><button type="button" class="btn btn-success">Editar</button></td>
+                                                                                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                                                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
+                                                                                </tbody>
+                                                                            </table>
 
                                             </div>
                                             <!-- end widget content -->
@@ -228,22 +240,14 @@
                                         <!-- end widget div -->
 
                                     </div>
-                                    </article>
-                                </div> 
+                                </div>
+                                </section>
+                                </article>
                             </div>
+                            <!-- END MAIN CONTENT -->
+
                         </div>
-                    </section>
-                </article>
-
-                <!-- widget grid -->
-
-
-                <!-- NEW WIDGET START -->
-
-            </div>
-
-        </div>
-
+                        <!-- PAGE FOOTER -->
 
 
 

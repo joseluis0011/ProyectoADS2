@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Rdepar
-    Created on : 24/09/2017, 11:06:14 AM
+    Document   : Rcate
+    Created on : 26/09/2017, 02:42:17 AM
     Author     : LENOVO
 --%>
 
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="">
+         <meta name="description" content="">
         <meta name="author" content="">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -45,7 +45,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i>  My Dashboard <span>>Registrar Departamento  </span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i>  My Dashboard <span>>Registrar Categoria  </span></h1>
                     </div>
                 </div>
                 <!-- widget grid -->
@@ -76,7 +76,7 @@
                                             <div class="modal-body">
                                                 <form class="smart-form">
                                                     <header>
-                                                        Registrar Departamento
+                                                        Registrar Nueva Categoria
                                                     </header>
                                                     <c:forEach items="" var=""> 
                                                         <fieldset>
@@ -112,7 +112,7 @@
                                     
                                         <header>
                                             <span class="widget-icon"> <i class="fa fa-table"></i> </span>
-                                            <h2>Lista de Departamentos </h2>
+                                            <h2>Lista de Categorias </h2>
 
                                         </header>
 
@@ -141,19 +141,19 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
-                                                            <td>Inicial</td>
+                                                            <td>Muebles y enseres</td>
                                                             <td><button type="button" class="btn btn-success">Editar</button></td>
                                                             <td><button type="button" class="btn btn-danger">Eliminar</button></td>
                                                         </tr>
                                                         <tr>
                                                             <td>2</td>
-                                                            <td>Primer Grado</td>
+                                                            <td>Maquinas y Equipos Diversos</td>
                                                             <td><button type="button" class="btn btn-success">Editar</button></td>
                                                             <td><button type="button" class="btn btn-danger">Eliminar</button></td>
                                                         </tr>
                                                         <tr>
                                                             <td>3</td>
-                                                            <td>Primaria</td>
+                                                            <td>Equipos de Informatica</td>
                                                             <td><button type="button" class="btn btn-success">Editar</button></td>
                                                             <td><button type="button" class="btn btn-danger">Eliminar</button></td>
                                                         </tr>
@@ -175,7 +175,7 @@
                             <!-- END MAIN CONTENT -->
 
                         </div>
-                        <!-- PAGE FOOTER -->
-                        <%@include file="../../META-INF/jdf/footer.jspf" %>
-                        </body>
-                        </html>
+    <!-- PAGE FOOTER -->
+        <%@include file="../../META-INF/jdf/footer.jspf" %>
+    </body>
+</html>

@@ -45,7 +45,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Cambio de Contraseña <span>> My Dashboard</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> My Dashboard  <span>> Cambio de Contraseña</span></h1>
                     </div>
                 </div>
                 <!-- widget grid -->
@@ -89,11 +89,8 @@
                                         <footer>
                                             <input type="hidden" name="opc"   value="REGISTRAR CONTRATO">
                                             <button id="submitbtn" type="button" class="btn btn-labeled btn-success">
-                                                Registrar
-                                            </button>
-                                            <button type="button" id="cancelbtn" class="btn btn-labeled btn-danger">
-                                                Cancelar
-                                            </button>
+                                                Actualizar
+                                            </button> 
                                         </footer>
                                     </footer>
                                 </form>

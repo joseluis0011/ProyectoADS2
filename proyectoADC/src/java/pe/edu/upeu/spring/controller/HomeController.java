@@ -50,4 +50,12 @@ public class HomeController {
     public String Cmobiliario(){  
         return "Cmobiliario";
     }
+    @RequestMapping("/Rtesorera")
+    public String Rtesorera(){  
+        return "Rtesorera";
+    }
+    @RequestMapping("/Rcate")
+    public String Rcate(){  
+        return "Rcate";
+    }
 }
