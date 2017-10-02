@@ -49,98 +49,280 @@
                         <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Registrar Tesorera <span>> My Dashboard</span></h1>
                     </div>
                 </div>
+                <article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0em 1em;margin: 1em 20%">
+                    <section id="widget-grid" class="">
                 <!-- widget grid -->
-                <article class="col-sm-12 col-md-12 col-lg-10" style="padding: 1em 3em;margin: 1em 10%">
-                <section id="widget-grid" class="">
-                    <div class="jarviswidget" id="wid-id-4" data-widget-editbutton="false" data-widget-custombutton="false">
-                        <header>
-                            <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                            <h2>Registrar </h2>				
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="well well-light well-sm no-margin no-padding">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div id="myCarousel" class="carousel fade profile-carousel">
+                                                    <div class="air air-bottom-right padding-10">
+                                                        <a class="btn txt-color-white bg-color-teal btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-check"></i> Actualizar</a>&nbsp; <a  class="btn txt-color-white bg-color-pinkDark btn-sm" data-toggle="modal" data-target="#myModal2"><i class="fa fa-link"></i> Editar</a>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <form class="smart-form">
+                                                                        <header>
+                                                                            Actualizar Mis Datos
+                                                                        </header>
+                                                                        <c:forEach items="" var=""> 
+                                                                            <fieldset>
+                                                                                <div class="row">
+                                                                                    <section class="col col-6">
+                                                                                        <label>Nombres</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-user"></i>
+                                                                                            <input type="text" name="fname" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-6">
+                                                                                        <label>Apellido Paterno</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-user"></i>
+                                                                                            <input type="text" name="lname" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <section class="col col-6">
+                                                                                        <label>Apellido Materno</label>
+                                                                                        <label class="input"> <i class="icon-prepend fa fa-envelope-o"></i>
+                                                                                            <input type="email" name="email" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-6">
+                                                                                        <label>Fecha Cumpleaños</label>
+                                                                                        <label class="input"> <i class="icon-append fa fa-calendar"></i>
+                                                                                            <input type="text" name="request" placeholder="Request activation on" class="datepicker" data-dateformat='dd/mm/yy'>
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <section class="col col-4">
+                                                                                        <label>DNI</label>
+                                                                                        <label class="input"> <i class="icon-prepend fa fa-envelope-o"></i>
+                                                                                            <input type="email" name="sexo" >
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-4">
+                                                                                        <label>Telefono</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-home"></i>
+                                                                                            <input type="text" name="tip_doc" id="tip_doc" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-4">
+                                                                                        <label>Direccion</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-home"></i>
+                                                                                            <input type="text" name="num_doc" id="num_doc"  />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div> 
+                                                                                <div class="row">
+                                                                                    <section class="col col-4">
+                                                                                        <label>Correo Electronico</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-home"></i>
+                                                                                            <input type="text" name="num_doc" id="num_doc"  />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                        </c:forEach>
+                                                                    </form>
 
-                        </header>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                                        Cancel
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-primary">
+                                                                        Guardar
+                                                                    </button>
+                                                                </div>
+                                                            </div><!-- /.modal-content -->
+                                                        </div><!-- /.modal-dialog -->
+                                                    </div><!-- /.modal -->
+                                                    <!-- /.editar -->
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <form class="smart-form">
+                                                                        <header>
+                                                                            Editar Mis Datos
+                                                                        </header>
+                                                                        <c:forEach items="" var=""> 
+                                                                            <fieldset>
+                                                                                <div class="row">
+                                                                                    <section class="col col-6">
+                                                                                        <label>Nombres</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-user"></i>
+                                                                                            <input type="text" name="fname" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-6">
+                                                                                        <label>Apellido Paterno</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-user"></i>
+                                                                                            <input type="text" name="lname" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <section class="col col-6">
+                                                                                        <label>Apellido Materno</label>
+                                                                                        <label class="input"> <i class="icon-prepend fa fa-envelope-o"></i>
+                                                                                            <input type="email" name="email" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-6">
+                                                                                        <label>Fecha Cumpleaños</label>
+                                                                                        <label class="input"> <i class="icon-append fa fa-calendar"></i>
+                                                                                            <input type="text" name="request" placeholder="Request activation on" class="datepicker" data-dateformat='dd/mm/yy'>
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <section class="col col-4">
+                                                                                        <label>DNI</label>
+                                                                                        <label class="input"> <i class="icon-prepend fa fa-envelope-o"></i>
+                                                                                            <input type="email" name="sexo" >
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-4">
+                                                                                        <label>Telefono</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-home"></i>
+                                                                                            <input type="text" name="tip_doc" id="tip_doc" />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                    <section class="col col-4">
+                                                                                        <label>Direccion</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-home"></i>
+                                                                                            <input type="text" name="num_doc" id="num_doc"  />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div> 
+                                                                                <div class="row">
+                                                                                    <section class="col col-4">
+                                                                                        <label>Correo Electronico</label>
+                                                                                        <label class="input"><i class="icon-prepend fa fa-home"></i>
+                                                                                            <input type="text" name="num_doc" id="num_doc"  />
+                                                                                        </label>
+                                                                                    </section>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                        </c:forEach>
+                                                                    </form>
 
-                        <!-- widget div-->
-                        <div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                                        Cancel
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-primary">
+                                                                        Guardar
+                                                                    </button>
+                                                                </div>
+                                                            </div><!-- /.modal-content -->
+                                                        </div><!-- /.modal-dialog -->
+                                                    </div><!-- /.modal -->
+                                                    <div class="air air-top-left padding-10">
+                                                        <h4 class="txt-color-white font-md">Octubre 2, 2017</h4>
+                                                    </div>
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                                                    </ol>
+                                                    <div class="carousel-inner">
+                                                        <!-- Slide 1 -->
+                                                        <div class="item active">
+                                                            <img src="recursos/img/demo/s1.jpg" alt="demo user">
+                                                        </div>
+                                                        <!-- Slide 2 -->
+                                                        <div class="item">
+                                                            <img src="recursos/img/demo/s2.jpg" alt="demo user">
+                                                        </div>
+                                                        <!-- Slide 3 -->
+                                                        <div class="item">
+                                                            <img src="recursos/img/demo/m3.jpg" alt="demo user">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                            <!-- widget edit box -->
-                            <div class="jarviswidget-editbox">
-                                <!-- This area used as dropdown edit box -->
+                                            <div class="col-sm-12">
 
+                                                <div class="row">
+
+                                                    <div class="col-sm-3 profile-pic">
+                                                        <img src="recursos/img/avatars/sunny-big.png" alt="demo user">
+
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h1>John <span class="semi-bold">Doe</span>
+                                                            <br>
+                                                            <small> Tesorera</small></h1>
+
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-phone"></i><span class="txt-color-darken">Nombre:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-envelope"></i><span class="txt-color-darken">Apellido Paterno:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-skype"></i><span class="txt-color-darken">Apellido Materno:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-calendar"></i><span class="txt-color-darken">Fecha Cumpleaños:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-calendar"></i><span class="txt-color-darken">DNI:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-calendar"></i><span class="txt-color-darken">Telefono:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-calendar"></i><span class="txt-color-darken">Direccion:</span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <i class="fa fa-calendar"></i><span class="txt-color-darken">Correo Electronico:</span>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                    <div class="widget-body no-padding">
-                        <form class="smart-form">
-                            <header>
-                                Registrar Datos de la Tesorera
-                            </header>
-                            <c:forEach items="" var=""> 
-                                <fieldset>
-                                    <div class="row">
-                                        <section class="col col-6">
-                                            <label>Nombres</label>
-                                            <label class="input"><i class="icon-prepend fa fa-user"></i>
-                                                <input type="text" name="fname" />
-                                            </label>
-                                        </section>
-                                        <section class="col col-6">
-                                            <label>Apellido Paterno</label>
-                                            <label class="input"><i class="icon-prepend fa fa-user"></i>
-                                                <input type="text" name="lname" />
-                                            </label>
-                                        </section>
-                                    </div>
-                                    <div class="row">
-                                        <section class="col col-6">
-                                            <label>Apellido Materno</label>
-                                            <label class="input"> <i class="icon-prepend fa fa-envelope-o"></i>
-                                                <input type="email" name="email" />
-                                            </label>
-                                        </section>
-                                        <section class="col col-6">
-                                             <label>Fecha Cumpleaños</label>
-                                            <label class="input"> <i class="icon-append fa fa-calendar"></i>
-                                                <input type="text" name="request" placeholder="Request activation on" class="datepicker" data-dateformat='dd/mm/yy'>
-                                            </label>
-                                        </section>
-                                    </div>
-                                    <div class="row">
-                                        <section class="col col-4">
-                                            <label>DNI</label>
-                                            <label class="input"> <i class="icon-prepend fa fa-envelope-o"></i>
-                                                <input type="email" name="sexo" >
-                                            </label>
-                                        </section>
-                                        <section class="col col-4">
-                                            <label>Telefono</label>
-                                            <label class="input"><i class="icon-prepend fa fa-home"></i>
-                                                <input type="text" name="tip_doc" id="tip_doc" />
-                                            </label>
-                                        </section>
-                                        <section class="col col-4">
-                                            <label>Direccion</label>
-                                            <label class="input"><i class="icon-prepend fa fa-home"></i>
-                                                <input type="text" name="num_doc" id="num_doc"  />
-                                            </label>
-                                        </section>
-                                    </div> 
-                                    <div class="row">
-                                        <section class="col col-4">
-                                            <label>Correo Electronico</label>
-                                            <label class="input"><i class="icon-prepend fa fa-home"></i>
-                                                <input type="text" name="num_doc" id="num_doc"  />
-                                            </label>
-                                        </section>
-                                </fieldset>
-                                <footer>
-                                    <input type="hidden" name="opc"   value="REGISTRAR CONTRATO">
-                                    <button id="submitbtn" type="button" class="btn btn-labeled btn-success">
-                                        Registrar
-                                    </button>
-                                </footer>
-                            </c:forEach>
-                        </form>
+                        </div>
                     </div>
-                </section>
-                </article>
+                </div>
+                    </section>
+                  </article>
             </div>
             <!-- END MAIN CONTENT -->
 

@@ -66,9 +66,7 @@
                                     <!-- This area used as dropdown edit box -->
 
                                 </div>
-                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                    Agregar
-                                </button>
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Agregar</button>
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
