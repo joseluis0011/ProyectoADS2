@@ -49,7 +49,7 @@
                         <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Registrar Tesorera <span>> My Dashboard</span></h1>
                     </div>
                 </div>
-                <article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0em 1em;margin: 1em 20%">
+                <article class="col-sm-12 col-md-12 col-lg-12" style="margin: 1em 0%;margin: 1em 15%">
                     <section id="widget-grid" class="">
                 <!-- widget grid -->
                 <div class="row">
@@ -62,7 +62,7 @@
                                             <div class="col-sm-12">
                                                 <div id="myCarousel" class="carousel fade profile-carousel">
                                                     <div class="air air-bottom-right padding-10">
-                                                        <a class="btn txt-color-white bg-color-teal btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-check"></i> Actualizar</a>&nbsp; <a  class="btn txt-color-white bg-color-pinkDark btn-sm" data-toggle="modal" data-target="#myModal2"><i class="fa fa-link"></i> Editar</a>
+                                                        <a class="btn txt-color-white bg-color-teal btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-check"></i> Registrar</a>&nbsp; <a  class="btn txt-color-white bg-color-pinkDark btn-sm" data-toggle="modal" data-target="#myModal2"><i class="fa fa-link"></i> Actualizar</a>
                                                     </div>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -71,7 +71,7 @@
                                                                 <div class="modal-body">
                                                                     <form class="smart-form">
                                                                         <header>
-                                                                            Actualizar Mis Datos
+                                                                            Registrar Mis Datos
                                                                         </header>
                                                                         <c:forEach items="" var=""> 
                                                                             <fieldset>
@@ -155,7 +155,7 @@
                                                                 <div class="modal-body">
                                                                     <form class="smart-form">
                                                                         <header>
-                                                                            Editar Mis Datos
+                                                                            Actualizar Mis Datos
                                                                         </header>
                                                                         <c:forEach items="" var=""> 
                                                                             <fieldset>
